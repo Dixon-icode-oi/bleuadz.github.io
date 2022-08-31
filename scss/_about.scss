@@ -1,0 +1,163 @@
+.about-us{
+    position: relative;
+    // border: 1px solid red;
+    width: 100%;
+    // border: 1px solid red;
+    padding: 2rem;
+    overflow: hidden;
+    h2{
+        @extend %title;
+    }
+    div{
+        .paragraph{
+            width: 70%;
+            // border: 1px solid red;
+            // position: relative;
+            left: 5%;
+            padding-right: 1rem;
+            // background-color: #fff;
+
+            p{
+                font-size: 1.3rem;
+                color: #3d3d3dfa;
+            }
+        }
+        img{
+           width: 70%;
+        }
+    }
+    .second-canvas{
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: 0;
+        left: -1rem;
+        z-index: 1;
+        background-color: #61adf54b;
+        border-radius: 50% 20%;
+        animation: glow 1.3s ease-in-out infinite;
+        transition: glow .3s;
+    }
+    .third-canvas{
+        width: 100px;
+        height: 100px;
+        background-color: #cccccc4b;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+    }
+    .span-1,.span-2,.span-3{
+        width: 40px; 
+        height: 40px;
+        // border: 1px solid red;
+        position: absolute;
+        border-radius: 50%;
+    }
+    .span-1{
+        top: 10%;
+        left: 30%;
+        background-color: #ffa60071;
+        // animation: moveRight 2s ease-in infinite;
+    }
+    .span-2{
+        bottom: 0%;
+        background-color: #ff000077;
+        z-index: 2;
+    }
+    .span-3{
+        top: 40%;
+        right: 10%;
+        background-color: #ff69b470;
+    }
+}
+
+@keyframes glow {
+    0%{
+        box-shadow: 0px 2px 4px #61adf54b
+    }
+    100%{
+        box-shadow: 0px 5px 10px #ffa500;
+    }
+}
+.contact{
+    h2{
+        @extend %title;
+    }
+    .col-4 i{
+        overflow: hidden;
+        color: #61adf54b;
+    }
+    .col-4 p{
+        text-align: center;
+        font-weight: 900;
+        font-size: 1.3rem;
+    }
+}
+
+// social media handles
+.social-handlers{
+    position: fixed;
+    bottom: 20%;
+    right: 2%;
+
+    .fb, .ig, .tw{
+       width: 50px;
+       height: 50px;
+       border-radius: 50%;
+        // border: 1px solid red;
+        margin-bottom: .4rem;
+        position: relative;
+
+        span{
+            position: absolute;
+            top: 10%;
+            font-size: 1.7rem;
+            color: #fff;
+        }
+    }
+    .tw{
+        span{
+            margin-left: .7rem;
+        }
+    }
+    .fb{
+        span{
+            margin-left: 1rem;
+        }
+        background-color: blue;
+    }
+    .ig{
+        background-color: hotpink;
+        span{
+            margin-left: .85rem;
+        }
+    }
+    .tw{
+        background-color: skyblue;
+    }
+
+    .what{
+        background-color: #5db901;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        // border: 1px solid red;
+        margin-bottom: .4rem;
+        position: relative;
+
+        &:hover{
+            background-color: transparent;
+            span{
+                color: #5db901;
+            }
+            box-shadow: 0px 2px 4px #5db901;
+        }
+        span{
+            margin-left: .6rem;
+            font-weight: 600;
+            font-size: 2.3rem;
+            color: #fff;
+        }
+    }
+}

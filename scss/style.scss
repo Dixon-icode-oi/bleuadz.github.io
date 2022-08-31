@@ -1,0 +1,243 @@
+@import './gbl_variable';
+@import './animations';
+
+// home page css
+.pageHeader{
+    z-index: 100;
+
+    .navbar{
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+
+        .logo a img{
+            width: 100px;
+        }
+        ul li{
+            font-weight: 600;
+        }
+    }
+}
+.showcase-container{
+    // position: absolute;
+    width: 100%;
+    top:0;
+    height: 90vh;
+    pointer-events: none;
+    overflow: hidden;
+    // padding: 1rem;
+    
+
+    .showcase-content{
+        width: 90%;
+        margin: 2.2rem auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem;
+       
+
+        .showcase-text{
+            width: 100%;
+            
+            h1{
+                overflow: hidden;
+                
+                .we_are{
+                    font-family: 'Broadway';
+                    letter-spacing: 1rem;
+                    word-spacing: 4px;
+                    font-size: 3.5rem;
+                }
+
+                .bleuadz-style{
+                    letter-spacing: 7px;
+
+                    .bleu{
+                        font-weight: 700;
+                        color: $text-color;
+                    }
+                }
+            }
+            p{
+                font-size: 1.2rem;
+                color:#888888;
+            }
+        }
+        .showcase-image{
+            width: 100%;
+            // border: 3px solid black;
+           
+            img{
+                width: 100%;
+            }
+        }
+
+    }
+    .shape-circle{
+        padding: 4px;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        bottom: -4rem;
+        left: -2rem;
+        z-index: -100;
+        background-color: #cccccc4b;
+        border-radius: 50%;
+        overflow: hidden;
+
+        .another-circle{
+            width: 200px;
+            height: 200px;
+            position: inherit;
+            left: 1rem;
+            margin: 3rem auto;
+            border-radius: 50%;
+            background-color: #87cfeba4;
+            border: 10px solid #fff;            
+        }
+    }
+
+}
+.our-qualities{
+    width: 100%;
+    margin: 1rem 0;
+    // border: 1px solid red;
+    padding: 1rem;
+
+    h2{
+        @extend %subtitle;
+    }
+
+    .our-text{
+        // text-align: justify;
+        width: 50%;
+        margin: .5rem auto;
+        padding: .4rem;
+        font-size: 1.2rem;
+
+        span{
+            color: #0092cc;
+        }
+    }
+    // #cut-diamond{
+    //     clip-path: ;
+    // }
+    .our-quality-content{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1rem;
+
+        div {
+            text-align: center;
+            width: 100%;
+            p {
+                font-size: 1.2rem;
+                text-align: center;
+                font-weight: 700;
+                text-transform: capitalize;
+            }
+            span{
+                font-size: 1.8rem;
+                color: #0092cc;
+            }
+        }
+    }
+}
+
+.why-choose-us{
+    h2{
+        @extend %subtitle;
+    }
+    .txt-desc{
+        text-align: center;
+        font-weight: 700;
+    }
+    .wcu-content{
+        width: 80%;
+        margin: 1rem auto;
+
+        .f-reason{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .image{
+                width: 50%;
+                position: relative;
+
+                .canvas-circle{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50% 10%;
+                    background-color: #0092cc41;
+                    position: absolute;
+                    top: 30%;
+                    left: 20%;
+                    z-index: -1;
+                    display: none;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            .reason-txt{
+                h3{
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 1.2rem;
+                    color: #888888;
+                }
+            }
+        }
+    }
+}
+
+
+.shape-circles {
+    padding: 4px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: -3rem;
+    right: -2rem;
+    z-index: -100;
+    background-color: #f3c25936;
+    border-radius: 50%;
+    overflow: hidden;
+
+    .another-circles {
+        width: 200px;
+        height: 200px;
+        position: inherit;
+        left: 1rem;
+        margin: 3rem auto;
+        border-radius: 50%;
+        background-color: #61adf54b;
+        border: 10px solid #fff;
+    }
+}
+
+//h2 style
+%subtitle{
+    text-align: center;
+        text-transform: capitalize;
+        font-size: 3rem;
+        font-weight: 800;
+    
+    span {
+            color: #0000ff;
+    }
+} 
+
+// .service-body{
+//     background-color: $pry-dark-theme;
+//     width: 1px solid red;
+// }
+@import './services';
+@import './pricing';
+@import './about';

@@ -1,0 +1,520 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Century Gothic";
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  display: inline;
+  margin-right: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #000;
+}
+
+.transition-fade {
+  opacity: 1;
+  transition: 300ms ease-in;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+.pageHeader {
+  z-index: 100;
+}
+.pageHeader .navbar {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+.pageHeader .navbar .logo a img {
+  width: 100px;
+}
+.pageHeader .navbar ul li {
+  font-weight: 600;
+}
+
+.showcase-container {
+  width: 100%;
+  top: 0;
+  height: 90vh;
+  pointer-events: none;
+  overflow: hidden;
+}
+.showcase-container .showcase-content {
+  width: 90%;
+  margin: 2.2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+.showcase-container .showcase-content .showcase-text {
+  width: 100%;
+}
+.showcase-container .showcase-content .showcase-text h1 {
+  overflow: hidden;
+}
+.showcase-container .showcase-content .showcase-text h1 .we_are {
+  font-family: "Broadway";
+  letter-spacing: 1rem;
+  word-spacing: 4px;
+  font-size: 3.5rem;
+}
+.showcase-container .showcase-content .showcase-text h1 .bleuadz-style {
+  letter-spacing: 7px;
+}
+.showcase-container .showcase-content .showcase-text h1 .bleuadz-style .bleu {
+  font-weight: 700;
+  color: #000fff;
+}
+.showcase-container .showcase-content .showcase-text p {
+  font-size: 1.2rem;
+  color: #888888;
+}
+.showcase-container .showcase-content .showcase-image {
+  width: 100%;
+}
+.showcase-container .showcase-content .showcase-image img {
+  width: 100%;
+}
+.showcase-container .shape-circle {
+  padding: 4px;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: -4rem;
+  left: -2rem;
+  z-index: -100;
+  background-color: rgba(204, 204, 204, 0.2941176471);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.showcase-container .shape-circle .another-circle {
+  width: 200px;
+  height: 200px;
+  position: inherit;
+  left: 1rem;
+  margin: 3rem auto;
+  border-radius: 50%;
+  background-color: rgba(135, 207, 235, 0.6431372549);
+  border: 10px solid #fff;
+}
+
+.our-qualities {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.our-qualities .our-text {
+  width: 50%;
+  margin: 0.5rem auto;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+}
+.our-qualities .our-text span {
+  color: #0092cc;
+}
+.our-qualities .our-quality-content {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.our-qualities .our-quality-content div {
+  text-align: center;
+  width: 100%;
+}
+.our-qualities .our-quality-content div p {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.our-qualities .our-quality-content div span {
+  font-size: 1.8rem;
+  color: #0092cc;
+}
+
+.why-choose-us .txt-desc {
+  text-align: center;
+  font-weight: 700;
+}
+.why-choose-us .wcu-content {
+  width: 80%;
+  margin: 1rem auto;
+}
+.why-choose-us .wcu-content .f-reason {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.why-choose-us .wcu-content .f-reason .image {
+  width: 50%;
+  position: relative;
+}
+.why-choose-us .wcu-content .f-reason .image .canvas-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50% 10%;
+  background-color: rgba(0, 146, 204, 0.2549019608);
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  z-index: -1;
+  display: none;
+}
+.why-choose-us .wcu-content .f-reason .image img {
+  width: 100%;
+}
+.why-choose-us .wcu-content .f-reason .reason-txt h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.why-choose-us .wcu-content .f-reason .reason-txt p {
+  font-size: 1.2rem;
+  color: #888888;
+}
+
+.shape-circles {
+  padding: 4px;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: -3rem;
+  right: -2rem;
+  z-index: -100;
+  background-color: rgba(243, 194, 89, 0.2117647059);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.shape-circles .another-circles {
+  width: 200px;
+  height: 200px;
+  position: inherit;
+  left: 1rem;
+  margin: 3rem auto;
+  border-radius: 50%;
+  background-color: rgba(97, 173, 245, 0.2941176471);
+  border: 10px solid #fff;
+}
+
+.our-qualities h2, .why-choose-us h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: 800;
+}
+.our-qualities h2 span, .why-choose-us h2 span {
+  color: #0000ff;
+}
+
+.service-section .services-details .video-ads img {
+  width: 300px;
+  position: relative;
+  left: 20%;
+}
+.service-section .services-details .video-ads h3, .service-section .services-details .digital h3, .service-section .services-details .web h3 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.service-section .services-details .video-ads p, .service-section .services-details .digital p, .service-section .services-details .web p {
+  color: #727272;
+}
+.service-section .services-details div {
+  width: 350px;
+  padding: 0.5rem;
+}
+.service-section .social-media {
+  margin-top: 1.5rem;
+  position: relative;
+}
+.service-section .social-media img {
+  width: 350px;
+}
+.service-section .social-media .desc {
+  width: 400px;
+}
+.service-section .social-media .desc h3 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.service-section .social-media .desc p {
+  color: #727272;
+}
+.service-section .social-media .social-grup {
+  position: absolute;
+  right: 3%;
+  bottom: 0;
+}
+.service-section .social-media .social-grup img {
+  width: 300px;
+}
+
+.contact h2, .about-us h2, .pricing-section h2, .service-section .service-content h2 {
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+.contact h2 span, .about-us h2 span, .pricing-section h2 span, .service-section .service-content h2 span {
+  color: #0000ff;
+}
+
+.service-section .services-details .digital img, .service-section .services-details .web img {
+  width: 200px;
+  position: relative;
+  left: 20%;
+}
+
+.pricing-section .plans {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+.pricing-section .plans .plan {
+  width: 300px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.pricing-section .plans .plan:hover {
+  transform: scale(1.02);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.7176470588);
+}
+.pricing-section .plans .plan .price {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.pricing-section .plans .plan p:not(:first-child) {
+  font-size: 1.4rem;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+.pricing-section .plans .plan a button {
+  border: none;
+  margin-bottom: 0.5rem;
+  padding: 0.4rem 1rem;
+  background-color: rgba(135, 207, 235, 0.6431372549);
+  border-radius: 5px;
+  font-weight: 700;
+}
+.pricing-section .plans .plan .active button {
+  background-color: #fff;
+  color: #00aff5;
+}
+.pricing-section .plans .small-business {
+  background-color: rgba(204, 204, 204, 0.2941176471);
+  border-radius: 10px;
+}
+.pricing-section .plans .small-business p {
+  overflow: hidden;
+}
+.pricing-section .plans .premium {
+  background-color: rgba(135, 207, 235, 0.6431372549);
+  border-radius: 10px;
+}
+.pricing-section .plans .premium p {
+  overflow: hidden;
+}
+.pricing-section .plans .advance {
+  box-shadow: 0px 1px 3px #ccc;
+  border-radius: 10px;
+}
+.pricing-section .plans .advance p {
+  overflow: hidden;
+}
+.pricing-section .other-prices {
+  text-align: center;
+}
+.pricing-section .other-prices h5 {
+  font-size: 1.3rem;
+}
+.pricing-section .other-prices p {
+  font-size: 1.3rem;
+  color: #727272;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+}
+.pricing-section .other-prices a {
+  background-color: rgba(135, 207, 235, 0.6431372549);
+  font-size: 1.6rem;
+  color: #000;
+  margin-bottom: 1rem;
+  margin: 0.5rem;
+}
+.pricing-section .other-prices a:hover {
+  transform: scale(1.04);
+  box-shadow: 2px 3px 30px #555;
+}
+
+.about-us {
+  position: relative;
+  width: 100%;
+  padding: 2rem;
+  overflow: hidden;
+}
+.about-us div .paragraph {
+  width: 70%;
+  left: 5%;
+  padding-right: 1rem;
+}
+.about-us div .paragraph p {
+  font-size: 1.3rem;
+  color: rgba(61, 61, 61, 0.9803921569);
+}
+.about-us div img {
+  width: 70%;
+}
+.about-us .second-canvas {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: -1rem;
+  z-index: 1;
+  background-color: rgba(97, 173, 245, 0.2941176471);
+  border-radius: 50% 20%;
+  -webkit-animation: glow 1.3s ease-in-out infinite;
+          animation: glow 1.3s ease-in-out infinite;
+  transition: glow 0.3s;
+}
+.about-us .third-canvas {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(204, 204, 204, 0.2941176471);
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+}
+.about-us .span-1, .about-us .span-2, .about-us .span-3 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50%;
+}
+.about-us .span-1 {
+  top: 10%;
+  left: 30%;
+  background-color: rgba(255, 166, 0, 0.4431372549);
+}
+.about-us .span-2 {
+  bottom: 0%;
+  background-color: rgba(255, 0, 0, 0.4666666667);
+  z-index: 2;
+}
+.about-us .span-3 {
+  top: 40%;
+  right: 10%;
+  background-color: rgba(255, 105, 180, 0.4392156863);
+}
+
+@-webkit-keyframes glow {
+  0% {
+    box-shadow: 0px 2px 4px rgba(97, 173, 245, 0.2941176471);
+  }
+  100% {
+    box-shadow: 0px 5px 10px #ffa500;
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0px 2px 4px rgba(97, 173, 245, 0.2941176471);
+  }
+  100% {
+    box-shadow: 0px 5px 10px #ffa500;
+  }
+}
+.contact .col-4 i {
+  overflow: hidden;
+  color: rgba(97, 173, 245, 0.2941176471);
+}
+.contact .col-4 p {
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+.social-handlers {
+  position: fixed;
+  bottom: 20%;
+  right: 2%;
+}
+.social-handlers .fb, .social-handlers .ig, .social-handlers .tw {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 0.4rem;
+  position: relative;
+}
+.social-handlers .fb span, .social-handlers .ig span, .social-handlers .tw span {
+  position: absolute;
+  top: 10%;
+  font-size: 1.7rem;
+  color: #fff;
+}
+.social-handlers .tw span {
+  margin-left: 0.7rem;
+}
+.social-handlers .fb {
+  background-color: blue;
+}
+.social-handlers .fb span {
+  margin-left: 1rem;
+}
+.social-handlers .ig {
+  background-color: hotpink;
+}
+.social-handlers .ig span {
+  margin-left: 0.85rem;
+}
+.social-handlers .tw {
+  background-color: skyblue;
+}
+.social-handlers .what {
+  background-color: #5db901;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-bottom: 0.4rem;
+  position: relative;
+}
+.social-handlers .what:hover {
+  background-color: transparent;
+  box-shadow: 0px 2px 4px #5db901;
+}
+.social-handlers .what:hover span {
+  color: #5db901;
+}
+.social-handlers .what span {
+  margin-left: 0.6rem;
+  font-weight: 600;
+  font-size: 2.3rem;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

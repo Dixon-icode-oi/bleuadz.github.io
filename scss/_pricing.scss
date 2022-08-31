@@ -1,0 +1,113 @@
+.pricing-section {
+    // border: 1px solid red;
+
+    h2 {
+        @extend %title;
+    }
+
+    .plans {
+        // border: 1px solid red;
+        width: 90%;
+        margin: 0 auto;
+        padding: .5rem;
+
+        .plan {
+            // border: 1px solid red;
+            width: 300px;
+            text-align: center;
+            cursor: pointer;
+            transition: all .4s ease-in-out;
+
+            &:hover {
+                transform: scale(1.02);
+                backface-visibility: hidden;
+                box-shadow: 0px 2px 8px #ccccccb7;
+            }
+
+            .price {
+                font-size: 3rem;
+                font-weight: 900;
+            }
+
+            p:not(:first-child) {
+                font-size: 1.4rem;
+                line-height: 24px;
+                text-transform: capitalize;
+            }
+
+            a button {
+                border: none;
+                margin-bottom: .5rem;
+                padding: .4rem 1rem;
+                background-color: #87cfeba4;
+                border-radius: 5px;
+                font-weight: 700;
+            }
+
+            .active button {
+                background-color: #fff;
+                color: #00aff5;
+            }
+        }
+
+        .small-business {
+            background-color: #cccccc4b;
+            border-radius: 10px;
+
+            p {
+                overflow: hidden;
+            }
+        }
+
+        .premium {
+            background-color: #87cfeba4;
+            border-radius: 10px;
+
+            // transform: scale(1.01);
+            p {
+                overflow: hidden;
+            }
+        }
+
+        .advance {
+            box-shadow: 0px 1px 3px #ccc;
+            border-radius: 10px;
+
+            p {
+                overflow: hidden;
+            }
+        }
+    }
+
+    .other-prices {
+
+        text-align: center;
+        // border: 1px solid blue;  
+        h5 {
+            font-size: 1.3rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+            color: #727272;
+            width: 50%;
+            margin: 0 auto;
+            padding: .5rem;
+            text-align: center;
+            // display: none;
+        }
+
+        a {
+            background-color: #87cfeba4;
+            font-size: 1.6rem;
+            color: #000;
+            margin-bottom: 1rem;
+            margin: .5rem;
+
+            &:hover {
+                transform: scale(1.04);
+                box-shadow: 2px 3px 30px #555;
+            }
+        }
+    }
+}

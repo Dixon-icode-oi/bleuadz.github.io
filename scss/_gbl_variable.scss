@@ -1,0 +1,31 @@
+// Colors and themes
+$pry-dark-theme: #000008;
+$text-color: #000fff;
+$font-family: 'Century Gothic';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: $font-family;
+}
+// global tags styles
+ul{
+    list-style-type: none;
+
+    li{
+        display: inline;
+        margin-right: 1.2rem;
+    }
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+h1,h2,h3,h4,h5{
+    color: #000;
+}
